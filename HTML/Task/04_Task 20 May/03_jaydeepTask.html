@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Assesment Task</title>
+    <style>
+      * {
+        margin: 0 auto;
+        /* text-align: center; */
+      }
+      div {
+        padding: 20px 0;
+      }
+      .center {
+        text-align: center;
+      }
+      .right {
+        text-align: right;
+      }
+      .left {
+        text-align: left;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Jaydeep Task -->
+    <div class="jaydeep">
+      <p class="center">Jaydeep's Task</p>
+      <br />
+      <form action="">
+        <table width="500px" cellspacing="10px">
+          <thead align="center">
+            <tr>
+              <th colspan="2"><h2>Survey Form</h2></th>
+            </tr>
+            <tr>
+              <td colspan="2ss">
+                <p>Let us know how can improve freeCodeCamp</p>
+              </td>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="right">Name :</td>
+              <td><input type="text" /></td>
+            </tr>
+            <tr>
+              <td class="right">E-mail :</td>
+              <td><input type="email" /></td>
+            </tr>
+            <tr>
+              <td class="right">Age :</td>
+              <td><input type="number" /></td>
+            </tr>
+            <tr>
+              <td class="right">
+                Which option best describes your current role?
+              </td>
+              <td>
+                <select name="Job-role" required>
+                  <option disabled selected>Select a option</option>
+                  <option value="Student">Student</option>
+                  <option value="Working professional">
+                    Working professional
+                  </option>
+                  <option value="first">First</option>
+                  <option value="first">First</option>
+                </select>
+              </td>
+            </tr>
+            <tr>
+              <td class="right">
+                How likely is that you would recommend freeCodeCamp to a friend?
+              </td>
+              <td>
+                <input type="radio" name="Recommendation" /> Definitely <br />
+                <input type="radio" name="Recommendation" /> Maybe <br />
+                <input type="radio" name="Recommendation" /> Not sure
+              </td>
+            </tr>
+            <tr>
+              <td class="right">What do you like most in FCC:</td>
+              <td>
+                <select name="Likes" required>
+                  <option disabled selected>Select a option</option>
+                  <option value="first">First</option>
+                  <option value="first">First</option>
+                </select>
+              </td>
+            </tr>
+            <tr>
+              <td class="right">
+                Things that should be improved in the future (Check all that
+                apply) :
+              </td>
+              <td>
+                <input type="checkbox" name="Impovements" /> Front-end Projects
+                <br />
+                <input type="checkbox" name="Impovements" />
+                Back-end Projects <br />
+                <input type="checkbox" name="Impovements" />
+                Data Visulization
+              </td>
+            </tr>
+            <tr>
+              <td class="right"><input type="submit" value="Submit" /></td>
+              <td><input type="reset" value="Reset" /></td>
+            </tr>
+          </tbody>
+        </table>
+      </form>
+    </div>
+  </body>
+</html>

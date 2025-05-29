@@ -1,0 +1,100 @@
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  background-color: #0e0e0e;
+  overflow: hidden;
+}
+
+.background {
+  height: 100vh;
+  width: 100%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.circle {
+  position: absolute;
+  border-radius: 50%;
+  background: radial-gradient(circle, #9b00ff, #3a0066);
+  z-index: 0;
+  /* filter: blur(30px); */
+  opacity: 0.6;
+}
+
+.circle1 {
+  width: 300px;
+  height: 300px;
+  top: 10%;
+  left: 10%;
+}
+
+.circle2 {
+  width: 300px;
+  height: 300px;
+  bottom: 10%;
+  right: 10%;
+}
+
+.card {
+  position: relative;
+  z-index: 1;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 16px;
+  padding: 30px 40px;
+  backdrop-filter: blur(15px);
+  color: white;
+  text-align: center;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+  width: 350px;
+}
+
+.avatar {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 15px;
+}
+
+.info h2 {
+  margin: 10px 0 5px;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.email {
+  font-size: 0.85rem;
+  color: #ccc;
+  margin-bottom: 10px;
+}
+
+.title {
+  font-size: 0.85rem;
+  margin-bottom: 15px;
+}
+
+.website {
+  color: #ccc;
+  text-decoration: none;
+  font-size: 0.85rem;
+  display: block;
+  margin-bottom: 15px;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.social-icons a {
+  color: white;
+  font-size: 1rem;
+  transition: 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: #9b00ff;
+}
