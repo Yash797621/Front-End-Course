@@ -1,0 +1,43 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: aqua;
+}
+.contact-form {
+  background: white;
+  padding: 20px;
+  max-width: 500px;
+  margin: auto;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+label {
+  display: block;
+  padding: 5px 0px;
+}
+input,
+textarea,
+select {
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  border: 1px solid rgb(182, 179, 179);
+  font-size: 14px;
+}
+select {
+  font-size: 14px;
+}
+button {
+  width: 100%;
+  padding: 10px;
+  background-color: rgb(120, 255, 255);
+  font-size: 16px;
+  font-weight: bold;
+  color: rgb(54, 52, 52);
+  border: 1px solid rgb(182, 181, 181);
+  cursor: pointer;
+}
+button:hover {
+  background-color: aqua;
+}
