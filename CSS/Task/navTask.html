@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Navbar Task</title>
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        text-decoration: none;
+        list-style: none;
+        color: #000;
+        font-size: 24px;
+        font-weight: bold;
+        font-family: cursive;
+      }
+      nav {
+        background: darkcyan;
+        text-align: center;
+        padding: 25px;
+        /* border: 10px solid;
+        border-image: linear-gradient(red, blue);
+        border-image-slice: 1;
+        border-radius: 50%; */
+      }
+      .main-menu {
+        /* border: 5px solid green; */
+        display: inline;
+        position: relative;
+        padding: 25px 0;
+      }
+      .dropdown {
+        display: block;
+        position: absolute;
+        width: 200px;
+        background-color: darkcyan;
+        /* display: none; */
+        /* visibility: hidden; */
+        z-index: -1;
+        transition: 0.5s;
+      }
+      .main-dropdown {
+        opacity: 0;
+        top: 100%;
+        left: 0;
+      }
+      .main-menu:hover .main-dropdown {
+        /* display: block; */
+        /* visibility: visible; */
+        opacity: 1;
+        z-index: 0;
+      }
+      .sub-menu {
+        position: relative;
+      }
+      .sub-dropdown {
+        top: 0;
+        left: 100%;
+        opacity: 0;
+      }
+      .sub-menu:hover .sub-dropdown {
+        opacity: 1;
+        z-index: 0;
+      }
+      .article p {
+        text-align: justify;
+        padding: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="container">
+      <ul>
+        <li class="main-menu">
+          <a href="">Home</a>
+        </li>
+
+        <li class="main-menu">
+          <a href="">About</a>
+        </li>
+
+        <li class="main-menu">
+          <a href="">Services</a>
+          <ul class="dropdown main-dropdown">
+            <li><a href="">Service 1</a></li>
+            <li><a href="">Service 2</a></li>
+            <li class="sub-menu">
+              <a href="">Service 3</a>
+              <ul class="dropdown sub-dropdown">
+                <li><a href="">Service</a></li>
+                <li><a href="">Service</a></li>
+                <li><a href="">Service</a></li>
+                <li><a href="">Service</a></li>
+              </ul>
+            </li>
+            <li><a href="">Service 4</a></li>
+          </ul>
+        </li>
+
+        <li class="main-menu">
+          <a href="">Contact</a>
+        </li>
+      </ul>
+    </nav>
+    <div class="article">
+      <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex, id
+        expedita veniam commodi enim temporibus itaque magni natus delectus
+        dolores corrupti? Eveniet expedita dolores enim reprehenderit similique
+        quaerat facilis. Minus nostrum maxime dicta molestias provident eaque,
+        quibusdam quia dignissimos. Ad iusto sed officia itaque minima, porro
+        maiores nostrum modi saepe.
+      </p>
+    </div>
+  </body>
+</html>
