@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Practice Task 4</title>
+    <style>
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+      }
+      .container {
+        /* height: 100%; */
+        background-color: rgb(40, 40, 40);
+        padding: 40px;
+        border-radius: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        flex-wrap: wrap;
+        font-family: "Roboto", sans-serif;
+        overflow: hidden;
+      }
+      .card {
+        flex-basis: 350px;
+        background-color: black;
+        color: white;
+        border-radius: 10px;
+        overflow: hidden;
+      }
+      .img-section {
+        height: 200px;
+        background: url(img/pexels-ekamelev-1104974.jpg);
+        background-size: 100% 100%;
+        background-position: center;
+        position: relative;
+      }
+      .img-section img {
+        width: 100px;
+        border-radius: 50%;
+        position: absolute;
+        bottom: 0;
+        left: 20px;
+        z-index: 1;
+      }
+      .text-section {
+        background-color: black;
+        position: relative;
+      }
+      .bg {
+        background-color: black;
+        position: absolute;
+        top: -30px;
+        transform: rotate(10deg) scale(1.1);
+        width: 100%;
+        height: 50px;
+      }
+      .text-section h2 {
+        margin-bottom: 0px;
+      }
+      .description {
+        padding: 0;
+        margin: 0;
+        color: blue;
+        font-size: 0.8rem;
+      }
+      .text {
+        padding: 10px 20px;
+      }
+      .btn button {
+        font-family: "Roboto", sans-serif;
+        /* font-size: 1.2rem; */
+        font-weight: bold;
+        background-color: transparent;
+        color: white;
+        border: 1px solid white;
+        border-radius: 5px;
+        cursor: pointer;
+        padding: 10px 20px;
+        transition: 0.3s;
+      }
+      .btn button:hover {
+        border-color: blue;
+        color: blue;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="card">
+        <div class="img-section">
+          <img
+            src="img/WhatsApp Image 2025-06-07 at 2.33.09 PM.jpeg"
+            alt="Profile-img"
+          />
+        </div>
+        <div class="text-section">
+          <div class="bg"></div>
+          <div class="text">
+            <h2>Name</h2>
+            <p class="description">Job</p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid,
+              veniam in consectetur error magnam asperiores blanditiis dolorum
+              explicabo recusandae, inventore libero quidem expedita deserunt
+              non labore a nam quae maxime eum? Quisquam rerum vitae
+              voluptatibus.
+            </p>
+            <div class="btn">
+              <button>FOLLOW</button>
+              <button>MORE INFO</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="img-section">
+          <img
+            src="img/WhatsApp Image 2025-06-07 at 2.33.09 PM.jpeg"
+            alt="Profile-img"
+          />
+        </div>
+        <div class="text-section">
+          <div class="bg"></div>
+          <div class="text">
+            <h2>Name</h2>
+            <p class="description">Job</p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid,
+              veniam in consectetur error magnam asperiores blanditiis dolorum
+              explicabo recusandae, inventore libero quidem expedita deserunt
+              non labore a nam quae maxime eum? Quisquam rerum vitae
+              voluptatibus.
+            </p>
+            <div class="btn">
+              <button>FOLLOW</button>
+              <button>MORE INFO</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="img-section">
+          <img
+            src="img/WhatsApp Image 2025-06-07 at 2.33.09 PM.jpeg"
+            alt="Profile-img"
+          />
+        </div>
+        <div class="text-section">
+          <div class="bg"></div>
+          <div class="text">
+            <h2>Name</h2>
+            <p class="description">Job</p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid,
+              veniam in consectetur error magnam asperiores blanditiis dolorum
+              explicabo recusandae, inventore libero quidem expedita deserunt
+              non labore a nam quae maxime eum? Quisquam rerum vitae
+              voluptatibus.
+            </p>
+            <div class="btn">
+              <button>FOLLOW</button>
+              <button>MORE INFO</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

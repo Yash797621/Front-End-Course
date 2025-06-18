@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Practice task 6</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: "roboto", sans-serif;
+        /* overflow: hidden; */
+      }
+      .container {
+        width: 800px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 0px;
+        margin: 0;
+        box-shadow: 0 0 10px black;
+        border-radius: 10px;
+        overflow: hidden;
+      }
+      .col {
+        flex-basis: 350px;
+        flex-grow: 1;
+        padding: 20px;
+      }
+      .text-section {
+        background-color: white;
+        position: relative;
+        z-index: 2;
+        overflow: hidden;
+      }
+      .text-section h2 {
+        color: rgb(0, 200, 255);
+      }
+      .text-section .links a {
+        display: inline-block;
+        width: 30px;
+        height: 30px;
+        background-color: rgb(0, 200, 255);
+        border-radius: 5px;
+      }
+      .text-section p {
+        margin: 10px 0;
+      }
+      .text-section .address {
+        margin: 15px 0;
+      }
+      .text-section .address p {
+        margin: 5px 0;
+      }
+      .form-section {
+        background-color: rgb(0, 200, 255);
+        position: relative;
+        z-index: 2;
+        overflow: hidden;
+      }
+      .form-section h2 {
+        color: white;
+      }
+      .form-section form {
+        display: flex;
+        flex-direction: column;
+      }
+      form input {
+        padding: 10px;
+        color: white;
+        background-color: transparent;
+        border: 2px solid white;
+        border-radius: 20px;
+        margin: 5px 0;
+      }
+      form textarea {
+        height: 100px;
+        padding: 10px;
+        color: white;
+        background-color: transparent;
+        border: 2px solid white;
+        border-radius: 20px;
+        margin: 5px 0;
+      }
+      input::placeholder,
+      textarea::placeholder {
+        font-family: "roboto", sans-serif;
+        color: white;
+      }
+      form button {
+        width: 80px;
+        padding: 10px;
+        background-color: white;
+        color: rgb(0, 200, 255);
+        font-family: "roboto", sans-serif;
+        font-weight: bold;
+        border: none;
+        border-radius: 25px;
+        margin-top: 10px;
+        cursor: pointer;
+      }
+      .circle {
+        width: 400px;
+        height: 400px;
+        position: absolute;
+        top: 50px;
+        left: 10%;
+        border: 60px solid rgb(0, 200, 255);
+        border-radius: 50%;
+        z-index: -1;
+      }
+      .circle-one {
+        width: 100px;
+        height: 100px;
+        background: #221c9c;
+        background: linear-gradient(
+          342deg,
+          rgba(0, 240, 255, 1) 0%,
+          rgba(0, 200, 255, 0.53) 100%
+        );
+        border-radius: 50%;
+        position: absolute;
+        right: 40px;
+        top: 10px;
+        z-index: -1;
+      }
+      .circle-two {
+        width: 200px;
+        height: 200px;
+        background: #221c9c;
+        background: linear-gradient(
+          342deg,
+          rgba(0, 240, 255, 1) 0%,
+          rgba(0, 200, 255, 0.53) 100%
+        );
+        border-radius: 50%;
+        position: absolute;
+        right: -50px;
+        top: 100px;
+        z-index: -1;
+      }
+      .border-circle {
+        width: 150px;
+        height: 150px;
+        position: absolute;
+        bottom: -60px;
+        right: 20px;
+        border: 20px solid rgba(128, 128, 128, 0.299);
+        border-radius: 50%;
+        z-index: -1;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="circle"></div>
+    <div class="container">
+      <div class="text-section col">
+        <h2>Let's get in touch</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates
+          delectus perferendis error, dolor aliquid fugiat.
+        </p>
+        <div class="address">
+          <p>Lorem ipsum dolor sit amet.</p>
+          <p>Lorem, ipsum.</p>
+          <p>Lorem, ipsum.</p>
+        </div>
+        <p>Connect with us :</p>
+        <div class="links">
+          <a href=""></a>
+          <a href=""></a>
+          <a href=""></a>
+          <a href=""></a>
+        </div>
+        <div class="border-circle"></div>
+      </div>
+      <div class="form-section col">
+        <div class="circle-one"></div>
+        <div class="circle-two"></div>
+        <h2>Contact us</h2>
+        <form action="">
+          <input type="text" placeholder="Username" />
+          <input type="email" placeholder="Email" />
+          <input type="tel" placeholder="Phone" />
+          <textarea placeholder="Messages"></textarea>
+          <button>Send</button>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Practice Task 5</title>
+    <style>
+      * {
+        box-sizing: border-box;
+        font-family: "roboto", sans-serif;
+      }
+      body {
+        margin: 0;
+        padding: 0;
+      }
+      .container {
+        min-height: 100vh;
+        background-color: blueviolet;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        padding: 50px 100px;
+        gap: 40px;
+      }
+      .card {
+        width: 320px;
+        height: 440px;
+        color: white;
+        background: linear-gradient(
+          0deg,
+          rgba(34, 193, 195, 1) 0%,
+          rgba(45, 97, 253, 1) 100%
+        );
+        box-shadow: inset 0 -10px 0 rgb(255, 255, 255, 0.4), 0 10px 0 white,
+          0 25px 0 rgba(0, 0, 0, 0.421);
+        border-radius: 20px;
+        border-bottom-left-radius: 200px;
+        border-bottom-right-radius: 200px;
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        position: relative;
+        text-align: center;
+        overflow: hidden;
+      }
+      .card::before {
+        content: "";
+        width: 100%;
+        height: 120%;
+        background: linear-gradient(
+          90deg,
+          transparent,
+          rgba(255, 255, 255, 0.2)
+        );
+        filter: blur(5px);
+        transform: rotate(30deg);
+        position: absolute;
+        top: -150px;
+        left: -100px;
+      }
+      .card-cont {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      .card .icon {
+        width: 120px;
+        height: 110px;
+        padding: 10px;
+        background-color: blueviolet;
+        box-shadow: 0 8px 0 rgb(255, 255, 255), 0 20px 0 rgba(0, 0, 0, 0.323),
+          0 -2px 0 blueviolet;
+        border-radius: 0px 0px 50% 50%;
+        position: relative;
+      }
+      .card .icon::before {
+        content: "";
+        width: 50px;
+        height: 50px;
+        background-color: transparent;
+        position: absolute;
+        top: 0;
+        left: -50px;
+        border-top-right-radius: 50px;
+        box-shadow: 14px -19px 0 blueviolet, 17px -1px 0 blueviolet,
+          4px -9px 0 blueviolet;
+      }
+      .card .icon::after {
+        content: "";
+        width: 50px;
+        height: 50px;
+        background-color: transparent;
+        position: absolute;
+        top: 0;
+        right: -50px;
+        border-top-left-radius: 50px;
+        box-shadow: -20px -13px 0 blueviolet, -20px -1px 0 blueviolet,
+          0px -13px 0 blueviolet;
+      }
+      .card .icon ion-icon {
+        color: white;
+        font-size: 5rem;
+      }
+      .content {
+        margin-top: 30px;
+      }
+      .content p {
+        padding: 0 40px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="card">
+        <div class="card-cont">
+          <div class="icon">
+            <ion-icon name="globe-outline"></ion-icon>
+          </div>
+          <div class="content">
+            <h2>Card One</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
+              debitis numquam, alias laborum eaque natus dolor totam
+              perspiciatis adipisci ipsum rem amet nobis commodi placeat!
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-cont">
+          <div class="icon">
+            <ion-icon name="globe-outline"></ion-icon>
+          </div>
+          <div class="content">
+            <h2>Card One</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
+              debitis numquam, alias laborum eaque natus dolor totam
+              perspiciatis adipisci ipsum rem amet nobis commodi placeat!
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-cont">
+          <div class="icon">
+            <ion-icon name="globe-outline"></ion-icon>
+          </div>
+          <div class="content">
+            <h2>Card One</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
+              debitis numquam, alias laborum eaque natus dolor totam
+              perspiciatis adipisci ipsum rem amet nobis commodi placeat!
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script
+    type="module"
+    src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+  ></script>
+  <script
+    nomodule
+    src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+  ></script>
+</html>

@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+    <title>Practice Task 2</title>
+    <style>
+      body {
+        background-color: rgb(36, 237, 36);
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .container {
+        margin: 60px;
+        padding: 40px;
+        display: flex;
+        background-color: white;
+        font-family: "Roboto", sans-serif;
+        border-radius: 10px;
+        gap: 10px;
+        /* flex-wrap: wrap; */
+      }
+      .col {
+        flex-basis: 150px;
+        /* flex-grow: 1; */
+      }
+      .img-section {
+        height: 100%;
+        background-color: rgb(74, 250, 74);
+        transform: translateX(-70px);
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+        border-radius: 10px;
+      }
+      .img-section img {
+        width: 250px;
+        transform: translateX(-40px);
+      }
+      .btn {
+        display: flex;
+        justify-content: space-between;
+      }
+      .fa-share-nodes,
+      .fa-heart {
+        color: white;
+        padding: 10px;
+        font-size: 1.2rem;
+        cursor: pointer;
+        transition: 0.2s;
+      }
+      .fa-share-nodes:hover,
+      .fa-heart:hover {
+        background-color: rgba(255, 255, 255, 0.2);
+      }
+
+      .img-options {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        column-gap: 5px;
+        padding: 10px;
+        background-color: white;
+        border-radius: 10px;
+      }
+      .img-options button {
+        background-color: transparent;
+        cursor: pointer;
+        border: 1px dotted rgba(128, 128, 128, 0.642);
+      }
+      .img-options img {
+        transform: translateX(0);
+        width: 40px;
+      }
+      .img-options button:hover {
+        background-color: rgba(74, 250, 74, 0.418);
+      }
+      .text-section {
+        transform: translateX(-20px);
+      }
+      .text-section h2 {
+        margin-bottom: 0;
+      }
+      .text-section .grey-text {
+        color: grey;
+        margin: 0;
+      }
+      .text-section .price {
+        color: rgb(255, 61, 61);
+        font-size: 1.4rem;
+        margin: 0 10px;
+        display: flex;
+        align-items: center;
+      }
+      .text-section .price span {
+        font-size: 3rem;
+        padding: 0 8px;
+      }
+      .text-section .img-options {
+        justify-content: start;
+        padding: 5px 0;
+        gap: 0;
+      }
+      .text-section .img-options button {
+        border: none;
+      }
+      .text-section .img-options .selected {
+        border: 1px dotted grey;
+      }
+      .text-section .cart-btn {
+        padding: 15px 30px;
+        font-family: "Roboto", sans-serif;
+        font-size: 1.1rem;
+        font-weight: bold;
+        background-color: rgb(255, 61, 61);
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="img-section col">
+        <div class="btn">
+          <i class="fa-solid fa-share-nodes"></i>
+          <i class="fa-solid fa-heart"></i>
+        </div>
+        <img src="img/green_apple_1-removebg-preview.png" alt="Fruit-image" />
+        <div class="img-options">
+          <button>
+            <img src="img/green_apple_1-removebg-preview.png" alt="" />
+          </button>
+          <button>
+            <img src="img/green_apple_2-removebg-preview.png" alt="" />
+          </button>
+          <button>
+            <img src="img/green_apple_3-removebg-preview.png" alt="" />
+          </button>
+          <button>
+            <img src="img/green_apple_2-removebg-preview.png" alt="" />
+          </button>
+        </div>
+      </div>
+      <div class="text-section col">
+        <h2>Delicious Apples</h2>
+        <p class="grey-text">Lorem, ipsum.</p>
+        <p class="price">RS <span>10.00</span></p>
+        <p class="grey-text">Lorem, ipsum dolor.</p>
+        <div class="img-options">
+          <button class="selected">
+            <img src="img/green_apple_1-removebg-preview.png" alt="" />
+          </button>
+          <button>
+            <img src="img/green_apple_2-removebg-preview.png" alt="" />
+          </button>
+          <button>
+            <img src="img/green_apple_3-removebg-preview.png" alt="" />
+          </button>
+          <button>
+            <img src="img/green_apple_2-removebg-preview.png" alt="" />
+          </button>
+        </div>
+        <p class="grey-text">Lorem, ipsum.</p>
+        <ul>
+          <li class="grey-text">Lorem ipsum dolor sit amet.</li>
+          <li class="grey-text">Lorem ipsum dolor sit amet consectetur.</li>
+          <li class="grey-text">Lorem ipsum dolor sit.</li>
+        </ul>
+        <button class="cart-btn">ADD TO CART</button>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Practice Task 1</title>
+    <style>
+      body {
+        height: 100vh;
+        background-color: rgb(22, 21, 21);
+        display: flex;
+        align-items: center;
+        /* overflow-y: hidden; */
+      }
+      .container {
+        width: 90%;
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        gap: 30px;
+        margin: auto;
+        color: white;
+        font-family: "Roboto", sans-serif;
+      }
+      .card {
+        flex-basis: 200px;
+        border: 10px solid yellow;
+        border-radius: 20% 5% 5% 5%;
+        text-align: center;
+        padding: 20px;
+        transition: 1s;
+      }
+      .box {
+        width: 100px;
+        height: 100px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 3rem;
+        border: 10px solid yellow;
+        border-radius: 50% 0% 50% 0%;
+        transform: translate(-21px, -25px);
+        position: relative;
+      }
+      .shadow {
+        content: "";
+        width: 10px;
+        height: 10px;
+        border-top-left-radius: 8px;
+        position: absolute;
+        top: -5%;
+        left: 109px;
+      }
+      .shadow-bottom {
+        content: "";
+        width: 10px;
+        height: 11px;
+        border-top-left-radius: 8px;
+        position: absolute;
+        bottom: -20px;
+        left: -9px;
+      }
+      .shadow-blue {
+        box-shadow: -1px -2px 0 rgb(8, 173, 255), -2px -4px 0 rgb(8, 173, 255);
+      }
+      .shadow-green {
+        box-shadow: -2px -3px 0 rgb(8, 255, 70), -2px -4px 0 rgb(8, 255, 70);
+      }
+      .shadow-purple {
+        box-shadow: -2px -3px 0 rgb(255, 8, 251), -2px -4px 0 rgb(255, 8, 251);
+      }
+      .blue {
+        border-color: rgb(8, 173, 255);
+      }
+      .green {
+        border-color: rgb(8, 255, 70);
+      }
+      .purple {
+        border-color: rgb(255, 8, 251);
+      }
+
+      button {
+        padding: 15px 20px;
+        font-size: 20px;
+        font-weight: 600;
+        border-radius: 50px;
+        cursor: pointer;
+        font-family: "Roboto", sans-serif;
+        border: none;
+        box-shadow: 0 0 10px black;
+      }
+      .btn-blue {
+        background-color: rgb(8, 173, 255);
+      }
+      .btn-green {
+        background-color: rgb(8, 255, 70);
+      }
+      .btn-purple {
+        background-color: rgb(255, 8, 251);
+      }
+      .fa-pen-ruler {
+        color: rgb(8, 173, 255);
+      }
+      .fa-rocket {
+        color: rgb(8, 255, 70);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="card blue">
+        <div class="box blue fa-solid fa-pen-ruler">
+          <div class="shadow shadow-blue"></div>
+          <div class="shadow-bottom shadow-blue"></div>
+        </div>
+        <h2>DESIGN</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus,
+          perferendis.
+        </p>
+        <button class="btn-blue">READ MORE</button>
+      </div>
+      <div class="card purple">
+        <div class="box purple btn-purple fa-solid fa-code">
+          <div class="shadow shadow-purple"></div>
+          <div class="shadow-bottom shadow-purple"></div>
+        </div>
+        <h2>DESIGN</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus,
+          perferendis.
+        </p>
+        <button class="btn-purple">READ MORE</button>
+      </div>
+      <div class="card green">
+        <div class="box green fa-solid fa-rocket">
+          <div class="shadow shadow-green"></div>
+          <div class="shadow-bottom shadow-green"></div>
+        </div>
+        <h2>DESIGN</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus,
+          perferendis.
+        </p>
+        <button class="btn-green">READ MORE</button>
+      </div>
+    </div>
+  </body>
+</html>
