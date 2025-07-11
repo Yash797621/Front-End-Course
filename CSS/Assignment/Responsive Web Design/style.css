@@ -1,0 +1,59 @@
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header,
+.content-cont,
+footer {
+  font-size: 2rem;
+}
+
+header {
+  height: 20%;
+  background-color: lightblue;
+}
+
+.content-cont {
+  height: 60%;
+  display: flex;
+}
+
+.content {
+  flex-basis: 50%;
+  flex-grow: 1;
+}
+
+.side-content {
+  background-color: azure;
+}
+.main-content {
+  background-color: beige;
+}
+footer {
+  height: 20%;
+  background-color: blanchedalmond;
+}
+
+@media (max-width: 768px) {
+  header,
+  .content-cont,
+  footer {
+    font-size: 1rem;
+  }
+
+  .content-cont {
+    flex-direction: column;
+  }
+
+  .content {
+    flex-basis: 100%;
+  }
+}

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Animated Task</title>
+    <style>
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+      .container {
+        width: 200px;
+        height: 200px;
+        background-color: black;
+        box-shadow: 8px 8px 5px rgba(0, 0, 0, 0.507);
+        position: relative;
+      }
+      .container .circle {
+        width: 180px;
+        height: 180px;
+        background-color: black;
+        border: 3px solid rgba(255, 255, 255, 0.8);
+        border-radius: 50%;
+        position: absolute;
+        bottom: 0;
+        transform: translateX(0);
+        transition: 1s;
+        z-index: -1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .circle img {
+        width: 75px;
+        border-radius: 50%;
+        animation: rotate 1s infinite linear;
+      }
+      .container:hover .circle {
+        transform: translateX(120px);
+        box-shadow: 8px 8px 5px rgba(0, 0, 0, 0.507);
+      }
+      @keyframes rotate {
+        to {
+          transform: rotate(360deg);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="circle">
+        <img
+          src="Practice task 07-06-2025/img/WhatsApp Image 2025-06-07 at 2.33.09 PM.jpeg"
+          alt=""
+        />
+      </div>
+    </div>
+  </body>
+</html>
