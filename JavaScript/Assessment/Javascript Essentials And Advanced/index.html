@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Javascript Essentials And Advanced</title>
+    <style>
+      body {
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .container {
+        width: 500px;
+        padding: 50px;
+        background-color: rgba(127, 208, 255, 0.605);
+        box-sizing: border-box;
+      }
+
+      form {
+        width: 100%;
+      }
+
+      input,
+      select {
+        display: block;
+        width: 100%;
+        margin: 5px;
+        border: none;
+        padding: 5px 10px;
+        background-color: antiquewhite;
+        border-radius: 5px;
+        transition: 0.2s ease-in-out;
+      }
+
+      input[type="submit"]:hover {
+        cursor: pointer;
+        background-color: rgba(127, 255, 212, 0.8);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Restaurant Booking Form</h1>
+    </div>
+    <script>
+      let formTag = document.createElement("form");
+      let inputChoice = document.createElement("select");
+      let inputName = document.createElement("input");
+      let inputNumber = document.createElement("input");
+      let inputEmail = document.createElement("input");
+      let inputPerson = document.createElement("input");
+      let inputDate = document.createElement("input");
+      let inputTime = document.createElement("input");
+      let inputSlot = document.createElement("select");
+      let submitBtn = document.createElement("input");
+
+      formTag.appendChild(inputChoice);
+      formTag.appendChild(inputName);
+      formTag.appendChild(inputNumber);
+      formTag.appendChild(inputEmail);
+      formTag.appendChild(inputPerson);
+      formTag.appendChild(inputDate);
+      formTag.appendChild(inputTime);
+      formTag.appendChild(inputSlot);
+      formTag.appendChild(submitBtn);
+
+      let choiceOption1 = document.createElement("option");
+      let choiceOption2 = document.createElement("option");
+      let choiceOption3 = document.createElement("option");
+
+      choiceOption1.textContent = "Full day booking";
+      choiceOption2.textContent = "Half day booking";
+      choiceOption3.textContent = "Hourly booking";
+
+      inputChoice.required = true;
+
+      inputChoice.appendChild(choiceOption1);
+      inputChoice.appendChild(choiceOption2);
+      inputChoice.appendChild(choiceOption3);
+
+      inputName.type = "text";
+      inputName.placeholder = "Enter Your Name";
+      inputName.required = true;
+
+      inputNumber.type = "tel";
+      inputNumber.placeholder = "Enter Your Number";
+      inputNumber.required = true;
+      inputNumber.pattern = "[0-9]{10}";
+
+      inputEmail.type = "email";
+      inputEmail.placeholder = "Enter Your E-mail";
+      inputEmail.required = true;
+
+      inputPerson.type = "number";
+      inputPerson.placeholder = "Enter Your Number of Person";
+      inputPerson.required = true;
+
+      inputDate.type = "date";
+      inputDate.placeholder = "Enter Your Date";
+      inputDate.required = true;
+
+      inputTime.type = "time";
+      inputTime.placeholder = "Enter Your Time";
+      inputTime.required = true;
+
+      let slotOption1 = document.createElement("option");
+      let slotOption2 = document.createElement("option");
+      let slotOption3 = document.createElement("option");
+
+      slotOption1.textContent = "Breakfast";
+      slotOption2.textContent = "Lunch";
+      slotOption3.textContent = "Dinner";
+
+      inputSlot.required = true;
+
+      inputSlot.appendChild(slotOption1);
+      inputSlot.appendChild(slotOption2);
+      inputSlot.appendChild(slotOption3);
+
+      submitBtn.type = "submit";
+      submitBtn.value = "Submit";
+
+      // console.log(formTag);
+
+      let container = document.querySelector(".container");
+      container.appendChild(formTag);
+
+      if (inputChoice.value === "Full day booking") {
+        inputDate.disabled = false;
+        inputTime.disabled = true;
+        inputSlot.disabled = true;
+      }
+
+      inputChoice.addEventListener("change", function () {
+        let value = inputChoice.value;
+        if (value === "Full day booking") {
+          inputDate.disabled = false;
+          inputTime.disabled = true;
+          inputSlot.disabled = true;
+        } else if (value === "Half day booking") {
+          inputDate.disabled = false;
+          inputTime.disabled = true;
+          inputSlot.disabled = false;
+        } else if (value === "Hourly booking") {
+          inputDate.disabled = false;
+          inputTime.disabled = false;
+          inputSlot.disabled = true;
+        }
+      });
+    </script>
+  </body>
+</html>
