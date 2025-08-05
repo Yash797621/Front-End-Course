@@ -25,7 +25,7 @@ body {
   height: 120px;
 }
 .img {
-  background: url("/CSS/Assignment/images/profile.jpeg");
+  background: url("/images/profile.jpeg");
   background-size: cover;
   background-position: top;
   width: 100px;
