@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Online Health Checkup Form</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="text-center my-4">Online Health Checkup Form</h1>
+      <form id="checkup-form">
+        <div class="mb-3">
+          <label for="fullName" class="form-label">Full Name</label>
+          <input
+            type="text"
+            class="form-control"
+            id="fullName"
+            name="fullName"
+            placeholder="Your Name"
+            required
+          />
+        </div>
+        <div class="mb-3">
+          <label for="phoneNumber" class="form-label">Phone Number</label>
+          <input
+            type="tel"
+            class="form-control"
+            id="phoneNumber"
+            name="phoneNumber"
+            pattern="[6-9]{1}[0-9]{9}"
+            placeholder="1234567890"
+            required
+          />
+        </div>
+        <div class="mb-3">
+          <label for="email" class="form-label">Email address</label>
+          <input
+            type="email"
+            class="form-control"
+            id="email"
+            name="email"
+            aria-describedby="emailHelp"
+            placeholder="example@gmail.com"
+            required
+          />
+        </div>
+        <div class="mb-3">
+          <label for="age" class="form-label">Age</label>
+          <input
+            type="number"
+            class="form-control"
+            id="age"
+            name="age"
+            placeholder="Your age"
+            min="1"
+            max="120"
+            required
+          />
+        </div>
+        <div class="mb-3">
+          <label for="date" class="form-label">Preferred Date</label>
+          <input
+            type="date"
+            name="date"
+            class="form-control"
+            id="date"
+            required
+          />
+        </div>
+        <div class="mb-3">
+          <label for="healthConcern" class="form-label">Health Concern</label>
+          <input
+            type="text"
+            class="form-control"
+            id="healthConcern"
+            name="healthConcern"
+            placeholder="Write your concern here"
+            required
+          />
+        </div>
+        <button type="submit" class="btn btn-success">Submit</button>
+        <button type="reset" class="btn btn-primary">Reset</button>
+      </form>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
