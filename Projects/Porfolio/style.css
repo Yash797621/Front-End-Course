@@ -1,0 +1,155 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Nunito", sans-serif;
+  box-sizing: border-box;
+  color: white;
+}
+body {
+  background-color: black;
+  padding: 20px 50px;
+  max-width: 768px;
+  margin: auto;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: roboto, sans-serif;
+}
+
+.section-heading {
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  padding: 20px 0;
+  letter-spacing: 2px;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header h1 {
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+header nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1rem;
+  padding: 0 10px;
+}
+
+main .about {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  padding: 4rem 0;
+}
+
+main #profile-img {
+  width: 250px;
+  height: 250px;
+  border: 2px solid;
+  border-radius: 50%;
+  animation: profile-img 5s infinite linear alternate;
+}
+
+main h2 {
+  font-size: 3rem;
+  line-height: 3rem;
+  margin-bottom: 1rem;
+}
+
+.about-text p {
+  margin: 1rem 0;
+}
+
+.about-text p a {
+  display: inline-flex;
+  justify-content: center;
+}
+
+.about-text a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.about-text .social {
+  display: flex;
+  gap: 1rem;
+}
+
+.about-text .social a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2px;
+}
+
+.tech-stack {
+  margin-bottom: 10px;
+}
+
+.tech-stack .techs {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 125px);
+  gap: 15px 10px;
+  padding: 20px 0;
+}
+
+.tech-stack .techs .tech-card {
+  height: 100px;
+  width: 125px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px;
+  border: 1px solid;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+}
+
+.tech-stack .techs .tech-card:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.tech-stack .techs .tech-card .card-icon {
+  transition: 0.2s ease-in-out;
+}
+
+.tech-stack .techs .tech-card:hover .card-icon {
+  transform: translateY(-5px);
+}
+
+.tech-stack .techs .tech-card p {
+  padding-top: 5px;
+  font-weight: bold;
+}
+
+@keyframes profile-img {
+  0% {
+    border-radius: 50% 50% 50% 50% / 50% 50% 50% 50%;
+  }
+  25% {
+    border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+  }
+  50% {
+    border-radius: 30% 70% 70% 30% / 60% 60% 40% 40%;
+  }
+  75% {
+    border-radius: 70% 30% 50% 50% / 50% 70% 30% 60%;
+  }
+  100% {
+    border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+  }
+}

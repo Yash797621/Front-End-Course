@@ -1,0 +1,38 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Manrope", sans-serif;
+}
+
+.container {
+  padding: 20px 50px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header nav a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  padding: 0 5px;
+}
+
+.btn {
+  background-color: #1e6760;
+  padding: 8px 15px;
+  color: white;
+  font-weight: bold;
+  border-radius: 25px;
+  border: none;
+  cursor: pointer;
+}
+
+.hero-section {
+  background: url(img/asset-03.jpg);
+  display: flex;
+}

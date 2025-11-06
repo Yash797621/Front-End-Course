@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us - RecruitPro</title>
+    <!-- Link to main stylesheet -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+
+    <!-- Optional: Font Awesome CDN for icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header class="main-header">
+      <div class="container header">
+        <a href="index.html" class="logo">RecruitPro</a>
+        <nav class="navbar">
+          <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="workflow.html">Workflow</a></li>
+            <li><a href="job-seekers.html">Job Seekers</a></li>
+            <li><a href="clients.html">Clients</a></li>
+            <li><a href="contact.html" class="active">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <section class="container contact-section">
+      <h2 class="section-title">Get in Touch</h2>
+      <p style="text-align: center; max-width: 700px; margin: 0 auto">
+        Have a question, request, or looking to collaborate? Reach out to us and
+        we’ll respond promptly!
+      </p>
+
+      <form class="contact-form" action="#" method="post">
+        <div class="form-group">
+          <label for="name">Full Name</label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Your name"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label for="email">Email Address</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="you@example.com"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label for="message">Your Message</label>
+          <textarea
+            id="message"
+            name="message"
+            rows="5"
+            placeholder="Type your message..."
+            required
+          ></textarea>
+        </div>
+        <button type="submit" class="btn-primary">Send Message</button>
+      </form>
+
+      <div class="contact-info">
+        <p><i class="fas fa-envelope"></i> support@recruitpro.com</p>
+        <p><i class="fas fa-phone"></i> +91-98765-43210</p>
+        <p><i class="fas fa-map-marker-alt"></i> Ahmedabad, India</p>
+      </div>
+    </section>
+
+    <footer>
+      <p>&copy; 2025 RecruitPro. All rights reserved.</p>
+    </footer>
+    <!-- Link to main JavaScript -->
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>

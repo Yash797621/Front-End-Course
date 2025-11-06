@@ -1,0 +1,191 @@
+* {
+  color: #333333;
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 15px;
+}
+
+header nav a {
+  text-decoration: none;
+  color: black;
+  padding: 0 10px;
+}
+
+header ul {
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+
+header ul li {
+  padding: 0 10px;
+  cursor: pointer;
+}
+main {
+  width: 100%;
+}
+
+main .hero-page {
+  background: url("/images/hero-page-background.jpg");
+  background-size: 100% 100%;
+  height: 700px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.hero-page .text-card {
+  width: 650px;
+  background-color: #fff3e3;
+  padding: 25px 20px;
+  margin-right: 40px;
+}
+
+.hero-page .text-card h2 {
+  color: #b88e2f;
+  font-weight: bold;
+  font-size: 52px;
+  line-height: 65px;
+}
+
+.primary-btn {
+  font-weight: bold;
+  color: white;
+  background-color: #b88e2f;
+  padding: 25px 72px;
+  border: none;
+  margin-top: 40px;
+}
+
+main .type-page {
+  max-width: 1180px;
+  text-align: center;
+  margin: 40px auto;
+}
+
+.page-heading {
+  font-size: 2rem;
+}
+
+.type-page .type-cards {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 40px;
+}
+
+.type-page .type-cards .types {
+  flex-basis: 380px;
+  flex-grow: 1;
+  text-align: center;
+}
+
+.type-page .type-cards .types p {
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding: 10px 0;
+}
+
+.type-page .type-cards .types img {
+  /* width: 100%; */
+  border-radius: 10px;
+}
+
+main .products-page {
+  padding: 0 18px;
+  text-align: center;
+  max-width: 1236px;
+  margin: 0 auto;
+}
+
+.products-page .products {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 285px);
+  gap: 20px;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.products-page .products .product-card {
+  text-align: left;
+  background-color: #f4f5f7;
+  padding-bottom: 10px;
+}
+
+.products-page .products .product-card .card-text {
+  padding: 10px;
+}
+
+.product-card .card-text h4 {
+  font-size: 1.2rem;
+  margin-bottom: 5px;
+}
+
+.product-card .card-text .product-discription {
+  font-size: 0.8rem;
+}
+
+.product-card .card-text .product-price {
+  font-weight: bold;
+  margin-top: 8px;
+}
+
+.products-page button {
+  padding: 10px 60px;
+  border: 1px solid #b88e2f;
+  background-color: #ffffff;
+  color: #b88e2f;
+  font-weight: bold;
+  margin-top: 25px;
+}
+
+main .inspiration-page {
+  background-color: #fcf8f3;
+  display: flex;
+  align-items: center;
+}
+
+.inspiration-page .inspiration-text .primary-btn {
+  padding: 12px 30px;
+  margin: 0;
+}
+
+.inspiration-page .inspiration-img-section .inspiration-preview-thumb {
+  background: url(/images/inspiration-thumbnail.jpg);
+  background-size: 100%;
+  height: 404px;
+}
+
+.inspiration-preview-thumb .inspiration-thumb-text {
+  width: 265px;
+}
+
+.inspiration-preview-thumb .inspiration-thumb-text .insp-thumb-title {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.inspiration-thumb-text .insp-thumb-title .line {
+  display: inline-block;
+  width: 27px;
+  border: 1px solid #333333;
+}
+
+.inspiration-preview-thumb .primary-btn {
+  padding: 10px 20px;
+  margin: 0;
+}

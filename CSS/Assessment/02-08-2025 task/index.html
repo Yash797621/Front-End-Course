@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>E-commerce Page</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+      integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="container flex">
+      <h2>Exclusive</h2>
+      <nav class="navbar">
+        <a href="#">Home</a>
+        <a href="#">Contact</a>
+        <a href="#">About</a>
+        <a href="#">Sign Up</a>
+      </nav>
+      <div class="search-section flex">
+        <div class="search flex">
+          <input type="text" placeholder="What are you looking for?" />
+          <img src="img/search-icon.svg" alt="Search-icon" />
+        </div>
+        <div class="icons">
+          <img src="img/like-icon.svg" alt="Like-icon" />
+          <img src="img/cart-icon.svg" alt="Shop-icon" />
+          <div class="mobile-nav-section">
+            <i class="fa-solid fa-bars" id="mobile-nav-icon"></i>
+            <nav class="mobile-nav">
+              <a href="#">Home</a>
+              <a href="#">Contact</a>
+              <a href="#">About</a>
+              <a href="#">Sign Up</a>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="hero-page container">
+        <div class="category-section">
+          <button class="category btn"></button>
+          <ul>
+            <li>Woman’s Fashion</li>
+            <li>Men’s Fashion</li>
+            <li>Electronics</li>
+            <li>Home & Lifestyle</li>
+            <li>Medicine</li>
+            <li>Sports & Outdoor</li>
+            <li>Baby’s & Toys</li>
+            <li>Groceries & Pets</li>
+            <li>Health & Beauty</li>
+          </ul>
+        </div>
+        <div class="product-slider flex">
+          <div class="product-text">
+            <div class="logo">
+              <img src="img/apple logo.svg" alt="Apple-logo" />
+              <p>iPhone 14 Series</p>
+            </div>
+            <p class="card-heading">Up to 10% off Voucher</p>
+            <button>
+              <span>Shop Now</span>
+              <img src="img/icons arrow-right.svg" alt="Right-arrow" />
+            </button>
+          </div>
+          <img
+            src="img/hero_endframe__cvklg0xk3w6e_large 2.jpg"
+            alt="product-img"
+            class="product-img"
+          />
+          <div class="slider-dots">
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot selected-dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
